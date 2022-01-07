@@ -4,9 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Rock, Paper, Scissors</title>
+    <script src="https://kit.fontawesome.com/60ad3a1d88.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="main-container">
+        <div class="play-area">
+            <div class="instructions">
+                <h1 class="title">Rock, Paper, Scissors</h1>
+                <p id="instruction-text">Welcome! You'll be playing "Rock, Paper, Scissors" against a computer. To begin, select either rock, paper, or scissors. Your running score against the computer will be recorded.</p>
+            </div>
+            <div class="selection-area">
+                <div class="rock">
+                    <button class="select-btn select-rock" id="rock"><i class="rps-icon fas fa-hand-rock"></i><br>Rock</button>
+                </div>
+                <div class="paper">
+                    <button class="select-btn select-paper" id="paper"><i class="rps-icon fas fa-hand-paper"></i><br>Paper</button>
+                </div>
+                <div class="scissors">
+                    <button class="select-btn select-scissors" id="scissors"><i class="rps-icon fas fa-hand-scissors"></i><br>Scissors</button>
+                </div>
+            </div>
+        </div>
+        <div class="scoreboard">
+            <h2 class="scoreboard-text">Scoreboard</h2>
+            <button id="reset-button">Reset</button>
+            <div class="running-score">
+                <p class="win-text">
+                    Wins: 
+                </p>
+                <p class="loss-text">
+                    Losses: 
+                </p>
+                <p class="tie-text">
+                    Ties: 
+                </p>
+            </div>
+            <div class="game-log">
+                <h2>Game Log</h2>
+                <br>
+                <table>
+                    <thead>
+                        <td>You</td>
+                        <td>Computer</td>
+                        <td>Result</td>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
